@@ -2415,6 +2415,24 @@
     lodash.isequal "^4.5.0"
     qs "^6.9.1"
 
+"@opentripplanner/core-utils@^12.0.0":
+  version "12.0.1"
+  resolved "https://registry.yarnpkg.com/@opentripplanner/core-utils/-/core-utils-12.0.1.tgz#2bafb78133393213b4943c76fec5d46436c0fb6d"
+  integrity sha512-QUTxEcpiOnbqaoiu6RQngTLlQHjSHO4PCMJqR9IRiaei08FnlTx2jgpvIaRla6u7tRNr12YCzptc37+a10ryww==
+  dependencies:
+    "@conveyal/lonlat" "^1.4.1"
+    "@mapbox/polyline" "^1.1.0"
+    "@opentripplanner/geocoder" "^3.0.2"
+    "@styled-icons/foundation" "^10.34.0"
+    "@turf/along" "^6.0.1"
+    chroma-js "^2.4.2"
+    date-fns "^2.28.0"
+    date-fns-tz "^1.2.2"
+    graphql "^16.6.0"
+    lodash.clonedeep "^4.5.0"
+    lodash.isequal "^4.5.0"
+    qs "^6.9.1"
+
 "@opentripplanner/endpoints-overlay@^2.0.12":
   version "2.0.12"
   resolved "https://registry.yarnpkg.com/@opentripplanner/endpoints-overlay/-/endpoints-overlay-2.0.12.tgz#d320c23777008550f350f614798c4a6300f4dba6"
@@ -2434,10 +2452,21 @@
     "@opentripplanner/location-icon" "^1.4.1"
     flat "^5.0.2"
 
-"@opentripplanner/geocoder@^2.0.1", "@opentripplanner/geocoder@^2.2.2":
+"@opentripplanner/geocoder@^2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@opentripplanner/geocoder/-/geocoder-2.2.2.tgz#8ddc669287ccdfff1a5cce14d1fa8049421c6480"
   integrity sha512-tJIOOE5N9kpMj0ji1YyVfWwg4yAFVs7Ks+EET67acql768bXwRE6rHoX6oaHvKhbCDjaQ7kuPIwi1BYWHQgg0Q==
+  dependencies:
+    "@conveyal/geocoder-arcgis-geojson" "^0.0.3"
+    "@conveyal/lonlat" "^1.4.1"
+    "@leeoniya/ufuzzy" "^1.0.14"
+    isomorphic-mapzen-search "^1.6.1"
+    lodash.memoize "^4.1.2"
+
+"@opentripplanner/geocoder@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@opentripplanner/geocoder/-/geocoder-3.0.2.tgz#2c7618947d1d9b082bd39d037327c9cf23282782"
+  integrity sha512-pl7tCiodex0hXWKLH3WE+I+HzoSgOOWp9kR3xMcuRiE5g6k2JXNneoD/ZfSS1n6Oorxcjv3U2DbMSXT2j/39dQ==
   dependencies:
     "@conveyal/geocoder-arcgis-geojson" "^0.0.3"
     "@conveyal/lonlat" "^1.4.1"
@@ -2450,7 +2479,13 @@
   resolved "https://registry.yarnpkg.com/@opentripplanner/humanize-distance/-/humanize-distance-1.2.0.tgz#71cf5d5d1b756adef15300edbba0995ccd4b35ee"
   integrity sha512-x0QRXMDhypFeazZ6r6vzrdU8vhiV56nZ/WX6zUbxpgp6T9Oclw0gwR2Zdw6DZiiFpSYVNeVNxVzZwsu6NRGjcA==
 
-"@opentripplanner/icons@^2.0.10", "@opentripplanner/icons@^2.0.9":
+"@opentripplanner/icons@../otp-ui/packages/icons":
+  version "3.0.1"
+  dependencies:
+    "@opentripplanner/core-utils" "^12.0.0"
+    prop-types "^15.7.2"
+
+"@opentripplanner/icons@^2.0.9":
   version "2.0.10"
   resolved "https://registry.yarnpkg.com/@opentripplanner/icons/-/icons-2.0.10.tgz#688e75190ebe772ad45bb852517e93bdde28df74"
   integrity sha512-9X6kV6jDsNnQT4foZU9X530zTN7kjYLtWBjWmeA5EVHth0qZx5T3iFjzqeG4wK+rwZKUMLGS5lAhLIQdaXKZMQ==
