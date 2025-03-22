@@ -707,6 +707,8 @@ disableSingleItineraryDays: false
 ### Setting to hide stops with no depatures in the nearby view.
 #   hideEmptyStops: true
 ### What radius should the nearby query get results within? (in meters)
+### Setting to use metric units (meters/kilometers) instead of imperial units (feet/miles) for distances.
+#   useMetricUnits: true
 #   radius: 600
 ### Setting this to true will use the route viewer sort algorithm on routes
 #   useRouteViewSort: false

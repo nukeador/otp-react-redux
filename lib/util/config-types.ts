@@ -75,6 +75,7 @@ export type NearbyViewConfig = {
   radius?: number
   showShadowDotOnMapDrag?: boolean
   useArrivalTime?: boolean
+  useMetricUnits?: boolean
   useRouteViewSort?: boolean
 }
 
